@@ -1,0 +1,25 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UPRCActivity">
+
+    <item
+        android:id="@+id/action_connect"
+        android:title="@string/action_connect"
+        android:icon="@drawable/cast_ic_notification_on"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_setting_dark"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/action_help"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="ifRoom"/>
+
+</menu>

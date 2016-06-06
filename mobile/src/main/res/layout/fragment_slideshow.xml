@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Root_Layout"
+    android:id="@+id/content_slide">
+
+    <ImageButton
+        android:id="@+id/btn_power"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_circle"
+        android:src="@drawable/power"/>
+
+    <LinearLayout
+        android:id="@+id/container_init"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/btn_power">
+
+        <ImageButton
+            style="@style/Button_Slide_Circle"
+            android:id="@+id/btn_start"
+            android:src="@drawable/play"/>
+
+        <ImageButton
+            style="@style/Button_Slide_Circle"
+            android:id="@+id/btn_stop"
+            android:src="@drawable/stop"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageButton
+            style="@style/Button_Slide_Rect"
+            android:id="@+id/btn_up"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_up"
+            android:src="@drawable/up"/>
+
+        <ImageButton
+            style="@style/Button_Slide_Rect"
+            android:id="@+id/btn_select"
+            android:layout_below="@id/btn_up"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rect_curved"
+            android:src="@drawable/enter"/>
+
+        <ImageButton
+            style="@style/Button_Slide_Rect"
+            android:id="@+id/btn_left"
+            android:layout_below="@id/btn_up"
+            android:layout_toStartOf="@id/btn_select"
+            android:background="@drawable/button_left"
+            android:src="@drawable/prev" />
+
+        <ImageButton
+            style="@style/Button_Slide_Rect"
+            android:id="@+id/btn_right"
+            android:layout_below="@id/btn_up"
+            android:layout_toEndOf="@id/btn_select"
+            android:background="@drawable/button_right"
+            android:src="@drawable/next"/>
+
+        <ImageButton
+            style="@style/Button_Slide_Rect"
+            android:id="@+id/btn_down"
+            android:layout_below="@id/btn_select"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_down"
+            android:src="@drawable/down"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_zoom"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            style="@style/Button_Slide_Circle"
+            android:id="@+id/btn_zoom_out"
+            android:src="@drawable/zoom_out"/>
+
+        <ImageButton
+            style="@style/Button_Slide_Circle"
+            android:id="@+id/btn_zoom_in"
+            android:src="@drawable/zoom_in"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

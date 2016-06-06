@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.upcite.uprc.remote.HomeActivity">
+
+    <item
+        android:id="@+id/action_home_help"
+        android:title="Help"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/action_exit"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+</menu>

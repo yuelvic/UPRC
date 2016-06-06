@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/category_connection"
+        android:key="pref_connection_settings">
+
+        <org.upcite.uprc.utils.CEditTextPreference
+            android:title="@string/pref_connection"
+            android:key="pref_ipAddress"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_host"
+        android:key="pref_host_settings">
+
+        <ListPreference
+            android:key="pref_hostSoftware"
+            android:title="@string/pref_host"
+            android:summary="%s"
+            android:dialogTitle="@string/pref_host_dialog"
+            android:entries="@array/list_presentation"
+            android:entryValues="@array/list_host_values"
+            android:defaultValue="@string/pref_host_powerpoint"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_hardware"
+        android:key="pref_extra_settings">
+
+        <CheckBoxPreference
+            android:key="pref_useWearable"
+            android:title="@string/pref_wear"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="pref_useHardware"
+            android:title="@string/pref_hardware"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

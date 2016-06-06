@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Root_Layout"
+    android:id="@+id/content_mouse">
+
+    <View
+        android:id="@+id/mouse_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/touch_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mouse_divider">
+
+        <Button
+            android:id="@+id/btn_touch_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mouse_left"/>
+
+        <Button
+            android:id="@+id/btn_touch_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mouse_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/touch_pad"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/touch_button"
+        android:background="@drawable/view_mouse_touchpad"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mouse_divider"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="@style/Button_Mouse_Extra"
+            android:id="@+id/btn_hold"
+            android:text="@string/mouse_hold"
+            android:layout_centerInParent="true"
+            />
+
+        <org.upcite.uprc.navigation.ArcLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_axisRadius="80dp"
+            app:arc_origin="center">
+
+            <Button
+                style="@style/Button_Mouse_Extra"
+                android:id="@+id/btn_pen"
+                android:text="@string/mouse_pen"
+                />
+
+            <Button
+                style="@style/Button_Mouse_Extra"
+                android:id="@+id/btn_eraser"
+                android:text="@string/mouse_eraser"
+                />
+
+            <Button
+                style="@style/Button_Mouse_Extra"
+                android:id="@+id/btn_hide"
+                android:text="@string/mouse_hide"
+                />
+
+            <Button
+                style="@style/Button_Mouse_Extra"
+                android:id="@+id/btn_laser"
+                android:text="@string/mouse_laser"
+                />
+
+            <Button
+                style="@style/Button_Mouse_Extra"
+                android:id="@+id/btn_arrow"
+                android:text="@string/mouse_arrow"
+                />
+
+
+        </org.upcite.uprc.navigation.ArcLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

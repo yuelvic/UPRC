@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <org.upcite.uprc.navigation.FloatingActionsMenu
+        style="@style/Floating_Button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        fab:fab_addButtonSize="mini"
+        fab:fab_labelsPosition="left"
+        fab:fab_labelStyle="@style/Floating_Label">
+
+        <org.upcite.uprc.navigation.FloatingActionButton
+            style="@style/Floating_Button"
+            android:id="@+id/btn_slide"
+            fab:fab_size="mini"
+            fab:fab_title="@string/nav_slide"/>
+
+        <org.upcite.uprc.navigation.FloatingActionButton
+            style="@style/Floating_Button"
+            android:id="@+id/btn_mouse"
+            fab:fab_size="mini"
+            fab:fab_title="@string/nav_mouse"/>
+
+        <org.upcite.uprc.navigation.FloatingActionButton
+            style="@style/Floating_Button"
+            android:id="@+id/btn_media"
+            fab:fab_size="mini"
+            fab:fab_title="@string/nav_media"/>
+
+        <org.upcite.uprc.navigation.FloatingActionButton
+            style="@style/Floating_Button"
+            android:id="@+id/btn_timer"
+            fab:fab_size="mini"
+            fab:fab_title="@string/nav_timer"/>
+
+        <org.upcite.uprc.navigation.FloatingActionButton
+            style="@style/Floating_Button"
+            android:id="@+id/btn_present"
+            fab:fab_size="mini"
+            fab:fab_title="@string/nav_present"/>
+
+        <org.upcite.uprc.navigation.FloatingActionButton
+            style="@style/Floating_Button"
+            android:id="@+id/btn_transfer"
+            fab:fab_size="mini"
+            fab:fab_title="@string/nav_transfer"/>
+
+    </org.upcite.uprc.navigation.FloatingActionsMenu>
+
+</RelativeLayout>

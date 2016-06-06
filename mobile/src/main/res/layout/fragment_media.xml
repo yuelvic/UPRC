@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Root_Layout"
+    android:id="@+id/content_media">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_circle"
+                android:layout_marginEnd="32dp"
+                android:id="@+id/btn_media_backward"
+                android:src="@drawable/backward"/>
+
+            <ImageButton
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_circle"
+                android:id="@+id/btn_media_forward"
+                android:src="@drawable/forward"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_media_pause"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_circle"
+                android:src="@drawable/pause"/>
+
+            <ImageButton
+                android:id="@+id/btn_media_stop"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_circle"
+                android:src="@drawable/stop"/>
+
+            <ImageButton
+                android:layout_width="132dp"
+                android:layout_height="132dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_circle"
+                android:id="@+id/btn_media_play"
+                android:src="@drawable/play"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_media_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_menu_crop"/>
+
+</RelativeLayout>

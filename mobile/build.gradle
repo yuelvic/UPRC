@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "org.upcite.uprc.remote"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 7
+        versionName "1.2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    wearApp project(':wear')
+    compile files('libs/butterknife-7.0.1.jar')
+    compile files('libs/commons-validator-1.4.1.jar')
+    compile files('libs/guava-18.0.jar')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile files('libs/itsrts-pptviewer.jar')
+}

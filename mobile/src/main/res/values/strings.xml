@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">UPRC</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_connect">Test Connection</string>
+    <string name="action_help">Help</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_positive">OK</string>
+    <string name="action_negative">Cancel</string>
+    
+    <string name="mouse_pen">PEN</string>
+    <string name="mouse_eraser">ERASE</string>
+    <string name="mouse_laser">LASER</string>
+    <string name="mouse_arrow">ARROW</string>
+    <string name="mouse_hide">HIDE</string>
+    <string name="mouse_hold">HOLD</string>
+
+    <string name="dialog_exit">Are you sure you want to exit?</string>
+
+    <string name="connection_action">Present</string>
+
+    <string name="ip_address">IP Address</string>
+
+    <string name="presentation_powerpoint">Microsoft PowerPoint</string>
+    <string name="presentation_keynote">Apple KeyNote</string>
+    <string name="presentation_prezi">Prezi</string>
+    <string name="presentation_impress">Others</string>
+
+    <string name="nav_slide">Slide Show</string>
+    <string name="nav_mouse">Mouse</string>
+    <string name="nav_media">Media</string>
+    <string name="nav_timer">Timer</string>
+    <string name="nav_present">Present</string>
+    <string name="nav_transfer">Transfer</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_help">Help</string>
+
+    <string name="home_present"><u>Present ></u></string>
+
+    <string name="mouse_left">L</string>
+    <string name="mouse_right">R</string>
+    
+    <string name="category_host">Host</string>
+    <string name="category_connection">Connection</string>
+    <string name="category_sound">Sound</string>
+    <string name="category_hardware">Hardware</string>
+
+    <string name="pref_connection">Host IP Address</string>
+
+    <string name="pref_host">Software Host</string>
+    <string name="pref_host_summary">Software to use</string>
+    <string name="pref_host_dialog">Choose host software</string>
+
+    <string name="pref_host_powerpoint">0</string>
+    <string name="pref_host_impress">1</string>
+    <string name="pref_host_keynote">2</string>
+    <string name="pref_host_prezi">3</string>
+
+    <string name="pref_sound">Sound on keypress</string>
+
+    <string name="pref_wear">Use wearable</string>
+    <string name="pref_hardware">Use hardware controls</string>
+
+    <string-array name="list_presentation">
+        <item>@string/presentation_powerpoint</item>
+        <item>@string/presentation_keynote</item>
+        <item>@string/presentation_prezi</item>
+        <item>@string/presentation_impress</item>
+    </string-array>
+
+    <string-array name="list_host_values">
+        <item>@string/pref_host_powerpoint</item>
+        <item>@string/pref_host_keynote</item>
+        <item>@string/pref_host_prezi</item>
+        <item>@string/pref_host_impress</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    
+    <string name="head_guide">Guide</string>
+    <string name="head_module">Modules</string>
+    <string name="head_credit">Credits</string>
+    <string name="note_1"><b>*Note:</b> To use this application, you must first download the pc server provided.</string>
+    <string name="note_2"><b>*Note:</b> You can use a different software that is not included in the list. Just make sure that it
+        supports the same function keys as the one selected.</string>
+    <string name="note_3"><b>*Note:</b> Some functions will not work because the software used has no feature included.</string>
+
+    <string name="guide_1">Step 1:</string>
+    <string name="guide_2">Step 2:</string>
+    <string name="guide_3">Step 3:</string>
+
+    <string name="guide_1_desc">Make sure that both PC and mobile are connected to the same Wi-Fi network.</string>
+    <string name="guide_2_desc">Open the PC server then copy the IP Address to the mobile IP Host setting.</string>
+    <string name="guide_3_desc">Choose a software host you will use for the presentation.</string>
+
+    <string name="module_1">Slide Show:</string>
+    <string name="module_2">Mouse:</string>
+    <string name="module_3">Media:</string>
+    <string name="module_4">Timer:</string>
+    <string name="module_5">Present:</string>
+    <string name="module_6">Transfer:</string>
+
+    <string name="module_1_desc">Basic slideshow controls.</string>
+    <string name="module_2_desc">Full mouse functions. Touch pad can also be used outside application.</string>
+    <string name="module_3_desc">Controls for videos embedded in the presentation.</string>
+    <string name="module_4_desc">Let\'s you time your presentation.</string>
+    <string name="module_5_desc">Present with your phone connected to the projector with your watch or a simple fling.</string>
+    <string name="module_6_desc">Transfer your presentation files from mobile to PC. Saved in user\'s documents folder.</string>
+
+    <string name="credit_desc"><b>University of Pangasinan</b>\nUoPCITE Solutions 2015</string>
+
+    <string name="link">Download Link:</string>
+    <string name="link_desc"><u>https://theuprc.wordpress.com/</u></string>
+
+</resources>
